@@ -1,7 +1,7 @@
 class StudentsInMLOps:
     def __init__(self):
         self.total_students = 0
-        self.class_name = "MLOps"
+        self.class_name = "MLOp"
 
     def enrollStudents(self, count):
         self.total_students += count
