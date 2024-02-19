@@ -14,10 +14,13 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Install dependencies
-        run: |
-          make install
+        run: make install
+        working-directory: ${{ github.workspace }}
 
       - name: Run tests
-        run: |
-          make test
+        run: make test
+        working-directory: ${{ github.workspace }}
